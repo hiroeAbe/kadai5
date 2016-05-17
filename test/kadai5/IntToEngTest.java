@@ -10,8 +10,8 @@ public class IntToEngTest {
 	@Test
 	public void translateEngTest() {
 		IntToEng ite = new IntToEng();
-		String expected = "ninehundred";
-		String actual = ite.translateEng(900);
+		String expected = "ninehundredninetynine";
+		String actual = ite.translateEng(999);
 		assertThat(actual, is(expected));
 	}
 
