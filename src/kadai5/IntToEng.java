@@ -19,92 +19,92 @@ public class IntToEng {
     	}else if(20<n && n<=100){
     		Eng = TwentyToHundred(n);
     	}else if(100<n && n<=1000){
-    		int a =n%100;
-    		int b = n/100;
-    		if(b == 1 && a != 0){
-    			if(a<=1 && a<11){
-    			Eng = "onehundred"+ZeroToTwenty(n);
-    			}else if(a<=11 && a<99){	
-    			Eng = "onehundred"+TwentyToHundred(n);	
+    		int a = n/100;
+    		int b = n%100;
+    		if(a == 1 && b != 0){
+    			if(b>=1 && b<11){
+    			Eng = "onehundred"+ZeroToTwenty(b);
+    			}else if(b>=11 && b<99){	
+    			Eng = "onehundred"+TwentyToHundred(b);	
     			}
-    		}else if(b == 2){
-    			if(a == 0){
+    		}else if(a == 2){
+    			if(b == 0){
     				Eng = "twohundred";
-    			}else if(a != 0){
-    				if(a<=1 && a<11){
-    					Eng = "twohundred"+ZeroToTwenty(n);
-    				}else if(a<=11 && a<99){	
-    					Eng = "twohundred"+TwentyToHundred(n);	
+    			}else if(b != 0){
+    				if(b>=1 && b<11){
+    					Eng = "twohundred"+ZeroToTwenty(b);
+    				}else if(b>=11 && b<99){	
+    					Eng = "twohundred"+TwentyToHundred(b);	
     				}
     			}
-    		}else if(b == 3){
-    			if(a == 0){
+    		}else if(a == 3){
+    			if(b == 0){
     				Eng = "threehundred";
-    			}else if(a != 0){
-    				if(a<=1 && a<11){
-    					Eng = "threehundred"+ZeroToTwenty(n);
-    				}else if(a<=11 && a<99){	
-    					Eng = "threehundred"+TwentyToHundred(n);	
+    			}else if(b != 0){
+    				if(b>=1 && b<11){
+    					Eng = "threehundred"+ZeroToTwenty(b);
+    				}else if(b>=11 && b<99){	
+    					Eng = "threehundred"+TwentyToHundred(b);	
     				}
     			}
-    		}else if(b == 4){
-    			if(a == 0){
+    		}else if(a == 4){
+    			if(b == 0){
     				Eng = "fourhundred";
-    			}else if(a != 0){
-    				if(a<=1 && a<11){
-    					Eng = "fourhundred"+ZeroToTwenty(n);
-    				}else if(a<=11 && a<99){	
-    					Eng = "fourhundred"+TwentyToHundred(n);	
+    			}else if(b != 0){
+    				if(b>=1 && b<11){
+    					Eng = "fourhundred"+ZeroToTwenty(b);
+    				}else if(b>=11 && b<99){	
+    					Eng = "fourhundred"+TwentyToHundred(b);	
     				}
     			}
-    		}else if(b == 5){
-    			if(a == 0){
+    		}else if(a == 5){
+    			if(b == 0){
     				Eng = "fivehundred";
-    			}else if(a != 0){
-    				if(a<=1 && a<11){
-    					Eng = "fivehundred"+ZeroToTwenty(n);
-    				}else if(a<=11 && a<99){	
-    					Eng = "fivehundred"+TwentyToHundred(n);	
+    			}else if(b != 0){
+    				if(b>=1 && b<11){
+    					Eng = "fivehundred"+ZeroToTwenty(b);
+    				}else if(b>=11 && b<99){	
+    					Eng = "fivehundred"+TwentyToHundred(b);	
     				}
     			}
-    		}else if(b == 6){
-    			if(a == 0){
+    		}else if(a == 6){
+    			if(b == 0){
     				Eng = "sixhundred";
-    			}else if(a != 0){
-    				if(a<=1 && a<11){
-    					Eng = "sixhundred"+ZeroToTwenty(n);
-    				}else if(a<=11 && a<99){	
-    					Eng = "sixhundred"+TwentyToHundred(n);	
+    			}else if(b != 0){
+    				if(b>=1 && b<11){
+    					Eng = "sixhundred"+ZeroToTwenty(b);
+    				}else if(b>=11 && b<99){	
+    					Eng = "sixhundred"+TwentyToHundred(b);	
     				}
     			}
-    		}else if(b == 7){
-    			if(a == 0){
+    		}else if(a == 7){
+    			if(b == 0){
     				Eng = "sevenhundred";
-    			}else if(a != 0){
-    				if(a<=1 && a<11){
-    					Eng = "sevenhundred"+ZeroToTwenty(n);
-    				}else if(a<=11 && a<99){	
-    					Eng = "sevenhundred"+TwentyToHundred(n);	
+    			}else if(b != 0){
+    				if(b>=1 && b<11){
+    					Eng = "sevenhundred"+ZeroToTwenty(b);
+    				}else if(b>=11 && b<99){	
+    					Eng = "sevenhundred"+TwentyToHundred(b);	
     				}
     			}
-    		}else if(b == 8){
-    			if(a == 0){
+    		}else if(a == 8){
+    			if(b == 0){
     				Eng = "eighthundred";
-    			}else if(a != 0){
-    				if(a<=1 && a<11){
-    					Eng = "eighthundred"+ZeroToTwenty(n);
-    				}else if(a<=11 && a<99){	
-    					Eng = "eighthundred"+TwentyToHundred(n);	
+    			}else if(b != 0){
+    				if(b>=1 && b<11){
+    					Eng = "eighthundred"+ZeroToTwenty(b);
+    				}else if(b>=11 && b<99){	
+    					Eng = "eighthundred"+TwentyToHundred(b);	
     				}
     			}
-    		}else if(b == 9){
-    			if(a == 0){
+    		}else if(a == 9){
+    			if(b == 0){
     				Eng = "ninehundred";
-    			}else if(a != 0){
-    				if(a<=1 && a<11){
-    					Eng = "ninehunderd"+ZeroToTwenty(n);
-    				}else if(a<=11 && a<99){	
-    					Eng = "ninehunded"+TwentyToHundred(n);	
+    			}else if(b != 0){
+    				if(b>=1 && b<11){
+    					Eng = "ninehunderd"+ZeroToTwenty(b);
+    				}else if(b>=11 && b<99){	
+    					Eng = "ninehunded"+TwentyToHundred(b);	
     				}
     			}
     		}
@@ -226,7 +226,9 @@ public class IntToEng {
 					Eng = Eng + ZeroToTwenty(a);
 				}
 			}else if (b == 10){
+				if(a == 0){
 				Eng = "hundred";
+				}
 			}
 		}
     	return Eng;
