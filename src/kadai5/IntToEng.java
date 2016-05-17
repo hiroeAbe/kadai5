@@ -18,7 +18,7 @@ public class IntToEng {
     		Eng =ZeroToTwenty(n);
     	}else if(20<n && n<=100){
     		Eng = TwentyToHundred(n);
-    	}else if(100<n && n<=1000){
+    	}else if(100<n && n<1000){
     		int a = n/100;
     		int b = n%100;
     		if(a == 1 && b != 0){
@@ -108,6 +108,8 @@ public class IntToEng {
     				}
     			}
     		}
+    	}else if(n==1000 ){
+    		Eng = "onethousand";
     	}
         return Eng;
     }
