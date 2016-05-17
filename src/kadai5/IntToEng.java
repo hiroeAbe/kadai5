@@ -102,9 +102,9 @@ public class IntToEng {
     				Eng = "ninehundred";
     			}else if(b != 0){
     				if(b>=1 && b<11){
-    					Eng = "ninehunderd"+ZeroToTwenty(b);
-    				}else if(b>=11 && b<99){	
-    					Eng = "ninehunded"+TwentyToHundred(b);	
+    					Eng = "ninehundred"+ZeroToTwenty(b);
+    				}else if(b>=11 && b<=99){	
+    					Eng = "ninehundred"+TwentyToHundred(b);	
     				}
     			}
     		}
